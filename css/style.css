@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--neutral-very-dark-blue);
+  color: white;
+  padding: 0 32px;
+}
+
+.state {
+  background-color: RGB(23 30 40);
+  padding: 32px;
+  margin-bottom: 64px;
+  border-radius: 16px;
+  max-width: 450px;
+}
+
+#wrapper-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  background-color: RGB(39 46 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#star-icon {
+  width: 24px;
+  height: 24px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--neutral-light-grey);
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+.rating-numbers {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-numbers input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  color: white;
+  background-color: var(--neutral-medium-grey);
+  transition: 0.3s;
+}
+
+input[type="radio"]:hover + label {
+  color: white;
+  background-color: var(--primary-orange);
+  transition: 0.3s;
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: RGB(39 46 56);
+  color: var(--neutral-light-grey);
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  background-color: var(--primary-orange);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--primary-orange);
+  background-color: white;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+#illustration-thank-you {
+  margin-bottom: 1.5rem;
+}
+
+#score {
+  background-color: RGB(39 46 56);
+  border: none;
+  color: var(--primary-orange);
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+  display: block;
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+footer p {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
